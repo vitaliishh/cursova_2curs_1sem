@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Warehouse</class>
+ <widget class="QMainWindow" name="Warehouse">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Accounting system</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Directory (Warehouse)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/image/res/menu/free-icon-font-refresh-3917293.png</normaloff>:/image/res/menu/free-icon-font-refresh-3917293.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBank">
+    <property name="title">
+     <string>Bank</string>
+    </property>
+    <addaction name="actionInformation"/>
+    <addaction name="actionAdd"/>
+   </widget>
+   <widget class="QMenu" name="menuAuthoration">
+    <property name="title">
+     <string>Authoration</string>
+    </property>
+    <addaction name="actionInformation_2"/>
+   </widget>
+   <widget class="QMenu" name="menuProfitable_invoice">
+    <property name="title">
+     <string>Profitable invoice</string>
+    </property>
+    <addaction name="actionInformation_3"/>
+    <addaction name="actionAdd_2"/>
+   </widget>
+   <widget class="QMenu" name="menuDirectory">
+    <property name="title">
+     <string>Directory</string>
+    </property>
+    <addaction name="actionInformation_4"/>
+   </widget>
+   <widget class="QMenu" name="menuAddirional">
+    <property name="title">
+     <string>Additional</string>
+    </property>
+    <addaction name="actionStart_window"/>
+   </widget>
+   <addaction name="menuBank"/>
+   <addaction name="menuAuthoration"/>
+   <addaction name="menuProfitable_invoice"/>
+   <addaction name="menuDirectory"/>
+   <addaction name="menuAddirional"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: white;</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionStart_window"/>
+   <addaction name="actionInformation"/>
+   <addaction name="actionInformation_2"/>
+   <addaction name="actionInformation_3"/>
+   <addaction name="actionInformation_4"/>
+  </widget>
+  <action name="actionInformation">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/bank (1).png</normaloff>:/image/res/menu/bank (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/free-icon-add-8387523.png</normaloff>:/image/res/menu/free-icon-add-8387523.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionInformation_2">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/authorization.png</normaloff>:/image/res/menu/authorization.png</iconset>
+   </property>
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+  <action name="actionInformation_3">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/invoice.png</normaloff>:/image/res/menu/invoice.png</iconset>
+   </property>
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+  <action name="actionAdd_2">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/free-icon-add-8387523.png</normaloff>:/image/res/menu/free-icon-add-8387523.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionInformation_4">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/root-directory.png</normaloff>:/image/res/menu/root-directory.png</iconset>
+   </property>
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+  <action name="actionStart_window">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/res/menu/main-menu (1).png</normaloff>:/image/res/menu/main-menu (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Start window</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
